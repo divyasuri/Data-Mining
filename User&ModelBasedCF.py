@@ -172,21 +172,6 @@ def UserBased():
 				outfile.write("\n")
 	outfile.close()
 	print(rmse)
-	end_time = datetime.datetime.now()
-	difference1 = end_time - start_time
-	difference_duration1 = round(difference1.total_seconds(),2)
-	print(difference_duration1)
-	range1 = rmse_differences.filter(lambda x: x>= 0 and x<1)
-	range2 = rmse_differences.filter(lambda x: x>=1 and x<2)
-	range3 = rmse_differences.filter(lambda x: x>=2 and x<3)
-	range4 = rmse_differences.filter(lambda x: x>=3 and x<4)
-	range5 = rmse_differences.filter(lambda x: x>=4)
-	len_range1 = range1.count()
-	len_range2 = range2.count()
-	len_range3 = range3.count()
-	len_range4 = range4.count()
-	len_range5 = range5.count()
-	print(len_range1,len_range2,len_range3,len_range4,len_range5)
 
 def ModelBased():
 	start_time = datetime.datetime.now()
@@ -244,10 +229,6 @@ def ModelBased():
 			outfile.write(str(p[2]))
 			outfile.write("\n")
 	outfile.close()
-	end_time = datetime.datetime.now()
-	difference1 = end_time - start_time
-	difference_duration1 = round(difference1.total_seconds(),2)
-	print(difference_duration1)
 	print(RMSE)
 
 if __name__ == "__main__":
