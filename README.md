@@ -1,4 +1,7 @@
 # Data Mining Projects
+
+Tools: Python (Pandas, NumPy, PySpark), Spark
+
 Examples of data mining projects I have completed, including finding frequent itemsets and collaborative filtering recommendation systems. 
 
 1. Finding Frequent Itemsets
