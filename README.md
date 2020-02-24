@@ -19,3 +19,8 @@ For this project, I utilized Spark and Python to implement the LSH technique to 
 spark-submit LSH.py <input_file_path> jaccard <output_file_path> 
 
 where the input file should be a CSV with users, businesses and their ratings for that business and output file should be a CSV.
+
+3. Implementing an Item-Based Collaborative Filtering Recommendation System to Predict User Ratings on Unseen Businesses
+
+For this project, I implemented a content-boosted item-based collaborative filtering system using means to impute missing data. I boosted the data for each business with content from a JSON file. I included markers of whether the business was a Beauty Salon, Restaurant, if it was open, its average star rating and whether it was local. In addition, I used adjusted cosine similarity as a similarity metric and normalized each user rating with the average of the user's ratings. I also used a case amplification weight (2.5) to reduce the influence of items with a low similarity. By iteratively working on this project, I ultimately achieved an RMSE of 1.07. 
+
