@@ -18,7 +18,7 @@ def AddUserRatingsDict(user):
             ratings_dict2[rating[0]] = ratings_dict2[rating[0]].append(rating[1])
     return (user[0],ratings_dict2) 
 
-def AddBusRatingsDict(business,): 
+def AddBusRatingsDict(business): 
     ratings_dict = {}
     ratings = business[1]
     for rating in ratings:
